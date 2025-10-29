@@ -1,0 +1,5 @@
+.venv
+download
+output
+test
+__pycache__
