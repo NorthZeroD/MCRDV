@@ -47,6 +47,7 @@ def main():
 
     # 2. 获取最新版本号
     try:
+        version_manifest_json = json.loads(version_manifest_json)
         minecraft_versions = get_minecraft_versions(version_manifest_json)
         if not minecraft_versions:
             print("未找到任何 Minecraft 版本")
