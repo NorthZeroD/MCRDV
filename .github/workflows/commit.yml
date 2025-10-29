@@ -49,7 +49,7 @@ jobs:
 
       - name: Copy *.json from output/ to root
         run: |
-          cp -v output/*.json ./"
+          cp -v output/*.json ./
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
