@@ -44,7 +44,7 @@ jobs:
       - name: Get Minecraft version for release title
         id: get-mcv
         run: |
-          echo "title=$(cat mcv.txt | tr -d '\n')" >> $GITHUB_OUTPUT
+          echo "title=$(cat output/mcv.txt | tr -d '\n')" >> $GITHUB_OUTPUT
 
       - name: Generate UTC-based tag
         id: tag
